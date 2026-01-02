@@ -1,6 +1,17 @@
-# Blazor Starter Application
+## Blazor Image Resizer Application
 
 This template contains an example .NET 8 [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-6.0#blazor-webassembly) client application, a .NET 8 C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview), and a C# class library with shared code.
+
+Based on the original Blazor Starter Application template, this project has been enhanced with image processing capabilities using SixLabors.ImageSharp for robust image manipulation.
+
+## Features
+- Image Resizing: Resize images by width, height, or target file size
+- Multiple Formats: Supports JPG, PNG, GIF, BMP, and WEBP formats
+- Size Compression: Compress images to target file sizes (KB-based input)
+- Aspect Ratio Preservation: Maintains image proportions during resizing
+- Real-time Preview: Preview original and resized images
+- File Validation: Comprehensive file type and size validation
+- Responsive Design: Mobile-friendly Bootstrap interface
 
 ## Getting Started
 
