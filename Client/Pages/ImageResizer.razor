@@ -171,7 +171,7 @@
                 content.Add(new StringContent(imageModel.TargetSizeKB.Value.ToString()), "targetSize");
 
             // Call the Azure Function
-            var response = await Http.PostAsync("https://your-function-app-name.azurewebsites.net/api/resize", content);
+            var response = await Http.PostAsync("/api/ResizeImage", content);
 
             if (response.IsSuccessStatusCode)
             {
