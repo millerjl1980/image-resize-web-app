@@ -95,7 +95,7 @@ public class ResizeImage
             }
 
             // Try to load and validate the image
-            Image image = null;
+            Image? image = null;
             try
             {
                 _logger.LogInformation("Loading image from stream");
@@ -128,7 +128,7 @@ public class ResizeImage
                 // Return resized image
                 var result = new FileContentResult(resultStream.ToArray(), file.ContentType)
                 {
-                    FileDownloadName = $"resized_{file.FileName}"
+                    FileDownloadName = $"resized_{file.FileName ?? "image.jpg"}"
                 };
 
                 _logger.LogInformation("Image resize function completed successfully");
